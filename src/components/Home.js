@@ -1,5 +1,6 @@
 import React from 'react'
 import { HiArrowNarrowRight } from 'react-icons/hi'
+import {Link} from 'react-scroll'
 
 function Home() {
   return (
@@ -11,7 +12,8 @@ function Home() {
            <p className='text-[#8892b0] py-4 max-w-[700px]'>I am a enthusiast learner and want to work on full stack web applications and develop them.
            I also am learning blockchain and would like to talk about it...</p>
            <div>
-              <button className='text-white group border-2 px-6 py-3 my-2 flex item-center hover:bg-pink-600 hover:border-pink-600'>Connect 
+              <button className='text-white group border-2 px-6 py-3 my-2 flex item-center hover:bg-pink-600 hover:border-pink-600'>
+              <Link to="contact" smooth={true} duration={500}>Contact</Link> 
               <span className='group-hover:rotate-90 duration-300'><HiArrowNarrowRight className='ml-3'/></span>
             </button>
            </div>
